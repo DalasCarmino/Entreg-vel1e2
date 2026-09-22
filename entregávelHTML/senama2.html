@@ -1,0 +1,248 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Meu Blog</title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eeeeee;
+            margin: 0;
+        }
+
+        header {
+            background-color: #333333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 10px;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 20px auto;
+        }
+
+        article {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        aside {
+            max-width: 700px;
+            margin: 20px auto;
+            padding: 25px;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .linha {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .campo {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+
+        label {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        input,
+        select {
+            padding: 10px;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .termos {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        button {
+            background-color: #333333;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555555;
+        }
+
+        footer {
+            background-color: #333333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Meu Blog</h1>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#artigos">Artigos</a>
+            <a href="#inscricao">Inscrição</a>
+        </nav>
+
+    </header>
+
+    <main id="artigos">
+
+        <article>
+
+            <h2>O que é HTML?</h2>
+
+            <p>
+                HTML é uma linguagem utilizada para criar a estrutura
+                das páginas da internet.
+            </p>
+
+            <img src="https://via.placeholder.com/400x200"
+                 alt="Imagem representando HTML">
+
+        </article>
+
+        <article>
+
+            <h2>Por que aprender programação?</h2>
+
+            <p>
+                Aprender programação ajuda a desenvolver sites,
+                aplicativos e diversos tipos de sistemas.
+            </p>
+
+            <img src="https://via.placeholder.com/400x200"
+                 alt="Imagem representando programação">
+
+        </article>
+
+    </main>
+
+    <aside id="inscricao">
+
+        <h2>Inscreva-se no Blog</h2>
+
+        <form method="get">
+
+            <div class="linha">
+
+                <div class="campo">
+
+                    <label for="nome">Nome:</label>
+
+                    <input type="text"
+                           id="nome"
+                           name="nome"
+                           minlength="3"
+                           required>
+
+                </div>
+
+                <div class="campo">
+
+                    <label for="email">E-mail:</label>
+
+                    <input type="email"
+                           id="email"
+                           name="email"
+                           required>
+
+                </div>
+
+            </div>
+
+            <div class="campo">
+
+                <label for="idade">Idade:</label>
+
+                <input type="number"
+                       id="idade"
+                       name="idade"
+                       min="18"
+                       max="120"
+                       required>
+
+            </div>
+
+            <div class="campo">
+
+                <label for="assunto">Assunto:</label>
+
+                <select id="assunto" name="assunto">
+
+                    <option value="html">HTML</option>
+                    <option value="programacao">Programação</option>
+                    <option value="tecnologia">Tecnologia</option>
+
+                </select>
+
+            </div>
+
+            <div class="termos">
+
+                <input type="checkbox"
+                       id="termos"
+                       name="termos"
+                       required>
+
+                <label for="termos">
+                    Aceito os termos
+                </label>
+
+            </div>
+
+            <button type="submit">
+                Enviar
+            </button>
+
+        </form>
+
+    </aside>
+
+    <footer id="inicio">
+
+        <p>
+            &copy; 2026 - Meu Blog
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
+```
